@@ -25,7 +25,7 @@ export default defineConfig({
     proxy: {
       "/uno": {
         ///
-        target: config.apiTarget,
+        target: "https://live-b.cf.dmcdn.net/",
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/uno/, ""),
