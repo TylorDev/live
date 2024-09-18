@@ -147,7 +147,9 @@ function App() {
             autoPlay
             className="video"
             playerRef={playerRef}
-            src={url.url}
+            src={
+              "https://live-b.cf.dmcdn.net/sec2(rLpwKarbl1e8Ue5HuoqU3-hi5_EOjE4ujZISujMrFBuRfSkzKn_tejKDDxYItoNnxzUZ2tYYoUafXuDdsy3fmPqPZgkdrT5qk9umO5cOxsw)/dm/3/x91tbcm/d/live-720.m3u8#cell=lcfb"
+            }
           />
         )}
         {isHls == false && (
