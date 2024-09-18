@@ -1,0 +1,136 @@
+.app {
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+
+  align-items: end;
+  justify-items: center;
+
+  grid-template-areas:
+
+    "button3 button2 button1"
+    "video video video";
+  gap: 2rem;
+  color: white;
+}
+
+.Reproducto {
+  position: relative;
+
+  padding-top: 3rem;
+  border-radius: 0.5rem;
+  grid-area: video;
+}
+
+.video {
+  position: relative;
+  border: 0px solid rgb(110, 110, 110);
+  width: 90vh;
+
+  border-radius: 0.5rem;
+}
+
+.live2 svg {
+  color: rgb(255, 25, 0);
+}
+
+.live2 {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 25, 0);
+  animation: parpadear 1.2s infinite;
+}
+
+@keyframes parpadear {
+
+  0%,
+  100% {
+    opacity: 1;
+    rotate: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.live {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+svg {
+  font-size: 3rem;
+}
+
+.console {
+  position: absolute;
+  left: 1%;
+  top: 0;
+}
+
+.button1 {
+  display: flex;
+  align-items: center;
+  align-self: start;
+  justify-self: end;
+  grid-area: button3;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.button2 {
+  display: flex;
+  align-items: center;
+  align-self: start;
+  justify-self: center;
+  grid-area: button2;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.button3 {
+  display: flex;
+  align-items: center;
+  align-self: start;
+  justify-self: start;
+  grid-area: button1;
+  font-size: 1.2rem;
+  color: white;
+}
+
+
+
+.canales {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  height: 100vh;
+  right: 0;
+  top: 0;
+
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+
+
+  align-items: end;
+  justify-content: center;
+  z-index: 2;
+
+  padding-right: 2rem;
+
+  button {
+    padding: 1rem;
+    width: 100px;
+
+
+    img {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

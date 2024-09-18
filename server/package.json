@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "classlist-polyfill": "^1.2.0",
+    "core-js": "^3.38.1",
+    "cors": "^2.8.5",
+    "es6-promise": "^4.2.8",
+    "express": "^4.20.0",
+    "intl": "^1.2.5",
+    "node-fetch": "^3.3.2",
+    "whatwg-fetch": "^3.6.20"
+  }
+}
