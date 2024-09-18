@@ -18,7 +18,7 @@ const config = JSON.parse(fs.readFileSync(configFilePath, "utf8"));
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-
+  base: "/live/",
   server: {
     host: true, // Permite que el servidor sea accesible desde la red local
     port: 5173,
